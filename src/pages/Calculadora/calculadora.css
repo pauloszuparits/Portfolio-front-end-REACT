@@ -1,0 +1,61 @@
+#input{
+   
+    font-size: 2em;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.botoes button{
+    margin: 6px;
+    font-size: 3em;
+    width: 90px;
+    border-radius: 10px;
+    color: white;
+    background-color: #125CDB;
+    border: none;
+}
+
+
+
+.botoes{
+    text-align: center;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#cancel{
+    margin-right: 200px;
+}
+
+.projetos{
+    margin: 8px;
+    width: 70%;
+    margin: auto;
+    border: solid 2px #06214F;
+    border-radius: 10px;
+}
+
+
+.sobre-projetos{
+    margin: 10px;
+    font-size: 1.1em;
+}
+
+.sobre-projetos h2{
+    margin-bottom: 5px;
+}
+
+.sobre-projetos p{
+    margin-bottom: 6px;
+}
+
+
+
+.sobre-projetos span{
+    font-weight: 100;
+    font-size: 0.9em;
+}

@@ -1,0 +1,39 @@
+.titulo-projetos{
+    text-align: center;
+    padding: 8px;
+}
+
+.texto-projetos{
+    display: flex;
+    margin: auto;
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 8px;
+    width: 70%;
+}
+
+.projetos-react{
+    margin-left: 20px;
+}
+
+#titulo-projetos-react{
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.projetos-react img{
+    width: 250px;
+}
+
+.projetos-react h3{
+    margin-bottom: 5px;
+}
+
+#cronometro{
+    height: 177px;
+}
+
+#calculadora{
+    height: 179px;
+}
+

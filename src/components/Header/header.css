@@ -1,0 +1,28 @@
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 8px;
+    color: white;
+    background-color: #0B3C8F;
+    border-radius: 0 0 2px 2px;
+    height: 60px;
+}
+
+.botoes-cabecalho a{
+    display: inline-flex;
+    
+    background-color: #06214F;
+    padding: 4px 8px;
+    border-radius: 7px;
+    font-size: 1.2em;
+    color: white;
+    transition: ease-in 0.2s;
+    margin-right: 8px;
+}
+
+.botoes-cabecalho a:hover{
+    transform: scale(1.1);
+    background-color: #011029;
+    border: solid 1px white;
+}
