@@ -1,0 +1,140 @@
+.conteiner-tarefas{
+    display: flex;
+    flex-direction: row;
+}
+
+.tarefas{
+    height: 500px;
+    margin: 2px;
+    margin-top: 10px;
+    border: solid 1px black;
+    width: 33.33%;
+    padding: 5px 0px 0px 13px;
+}
+.titulo-tarefas-conteiner{
+    display: flex;
+    flex-direction: row;
+       justify-content: space-between;
+    margin: 8px;
+}
+
+#slct-cor{
+    width: 300px;
+}
+
+.item-titulo-tarefa{
+    margin: 5px;
+    width: 200px;
+}
+
+.tarefa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+
+    background-color: #125CDB;
+    color: white;
+    width: 280px;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 1px black
+}
+
+#planejado{
+    background-color: rgba(0, 0, 255, 0.185);
+}
+#progresso{
+    background-color: rgba(255, 255, 0, 0.219);
+}
+#feito{
+    background-color: rgba(0, 255, 0, 0.356);
+}
+
+.input-tarefa{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+#titulo-tarefa{
+    width: 300px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    border: solid 2px #125CDB;
+}
+
+#descricao-tarefa{
+    width: 300px;
+    height: 80px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: solid 2px #125CDB;
+}
+
+#descricao-abbr{
+    margin-right: 10px;
+    text-decoration: none;
+    background-color: grey;
+    padding: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#botao-delete{
+    background-color: #125CDB;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#botao-delete:hover{
+    background-color: #0B3C8F;
+}
+#amarelo{
+    background-color: rgb(214, 214, 10);
+    color: black;
+}
+#laranja{
+    background-color: orange;
+    color: black;
+}
+#vermelho{
+    background-color: red;
+}
+#verde{
+    background-color: green;
+}
+#azul{
+    background-color: blue;
+}
+
+.botoes-tarefas{
+    margin-left: 8px;
+}
+
+.botao-tarefa{
+    border-radius: 10px;
+    background-color: #125CDB;
+    color: white;
+    font-weight: bold;
+    border: solid 1px black;
+}
+
+.botao-legenda{
+    margin-left: 10px;
+    padding: 0px 15px 0px 15px;
+}
+
+.legenda{
+    margin-bottom: 14px;
+    margin-top: 10px;
+}
+
+.titulo-legenda{
+    margin-bottom: 5px;
+    width: 200px;
+    word-wrap: break-word;
+}

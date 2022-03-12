@@ -11,7 +11,7 @@
 
 .itens{
     color: white;
-    background-color: blueviolet;
+    background-color: #125CDB;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 3px 3px 1px rgba(41, 41, 41, 0.26);
@@ -44,7 +44,7 @@ input.Item-pss{
     font-size: 1.5em;
     width: 200px;
     border-radius: 8px;
-    background-color: blueviolet;
+    background-color: #125CDB;
     color: white;
     border: solid 2px black;
     cursor: pointer;
@@ -68,7 +68,7 @@ input.Item-pss{
     font-size: 1.5em;
     width: 600px;
     border-radius: 8px;
-    background-color: blueviolet;
+    background-color: #125CDB;
     color: white;
     border: solid 2px black;
     cursor: pointer;
@@ -76,7 +76,7 @@ input.Item-pss{
 }
 
 .botao-pss2:hover{
-    background-color: rgb(75, 22, 126);
+    background-color: #0B3C8F;
 }
 
 .titulo-pss2{
@@ -84,7 +84,7 @@ input.Item-pss{
 }
 
 .titulo-pss2 p{
-    color: blueviolet;
+    color: #125CDB;
     font-weight: bolder;
 }
 #copy{

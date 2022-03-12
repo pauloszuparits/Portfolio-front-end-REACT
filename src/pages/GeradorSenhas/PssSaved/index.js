@@ -3,7 +3,7 @@ import './pssSaved.css'
 import { Link } from "react-router-dom";
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 import { toast } from "react-toastify";
-
+import Header from "../../../components/Header";
 export default function PssSaved(){
     const [senhas, setSenhas] = useState([]); //senhas
 
@@ -24,35 +24,41 @@ export default function PssSaved(){
 
     if(senhas.length == 0){ // se não tiver senhas criadas (Renderização conndicional)
         return(
-            <div className="conteiner-Saved">
-                <h1>Você não tem senhas salvas ainda :( </h1>
-                <Link to="/pssgen"><button className="botao-pss2">Clique aqui para gerar uma nova senha</button></Link>
+            <div>
+                <Header/>
+                <div className="conteiner-Saved">
+                    <h1>Você não tem senhas salvas ainda :( </h1>
+                    <Link to="/projetos/geradorsenhas"><button className="botao-pss2">Clique aqui para gerar uma nova senha</button></Link>
+                </div>
             </div>
         )
     }
 
     return(
-        <div className="conteiner-Saved">
-            <h1>Suas senhas</h1>
+        <div>
+            <Header/>
+            <div className="conteiner-Saved">
+                <h1>Suas senhas</h1>
             
-            <ul id="lista-Saved">
-                {senhas.map((item) => {return(
-                    <li id="item-lista-Saved">
-                        <span>{item}</span>
-                        <div>
-                            {/* Copiar senha */}
-                            <CopyToClipboard text={item}> 
-                                <button id="botao-excluir-Psssaved" onClick={()=>{toast.success("COPIADO!!")}}>Copiar senha</button>
-                            </CopyToClipboard>
-                            <button onClick={()=>{excluirSenha(item)}} id="botao-excluir-Psssaved">Excluir</button>   
-                        </div>
-                    </li>
-                    
-                )})}
-            </ul>
+                <ul id="lista-Saved">
+                    {senhas.map((item) => {return(
+                        <li id="item-lista-Saved">
+                            <span>{item}</span>
+                            <div>
+                                {/* Copiar senha */}
+                                <CopyToClipboard text={item}>
+                                    <button id="botao-excluir-Psssaved" onClick={()=>{toast.success("COPIADO!!")}}>Copiar senha</button>
+                                </CopyToClipboard>
+                                <button onClick={()=>{excluirSenha(item)}} id="botao-excluir-Psssaved">Excluir</button>
+                            </div>
+                        </li>
             
-            {/* botão para voltar para o menu */}
-            <Link to="/pssgen"><button className="botao-pss2">Gerar nova Senha</button></Link>
+                    )})}
+                </ul>
+            
+                {/* botão para voltar para o menu */}
+                <Link to="/projetos/geradorsenhas"><button className="botao-pss2">Gerar nova Senha</button></Link>
+            </div>
         </div>
     );
 }

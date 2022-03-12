@@ -4,7 +4,7 @@ import Home from "../pages/Home";
 import Projetos from "../pages/Projetos";
 import Calculadora from "../pages/Calculadora";
 import Cronometro from "../pages/Cronometro";
-
+import Tarefas from "../pages/Tarefas";
 import PssSaved from "../pages/GeradorSenhas/PssSaved";
 import PssGen from "../pages/GeradorSenhas/PssGen";
 
@@ -17,6 +17,7 @@ export default function Routes(){
             <Route exact path="/projetos/cronometro" component={Cronometro}/>
             <Route exact path="/projetos/geradorsenhas" component={PssGen}/>
             <Route exact path="/projetos/geradorsenhas/salvas" component={PssSaved}/>
+            <Route exact path="/projetos/tarefas" component={Tarefas}/>
             
             
             

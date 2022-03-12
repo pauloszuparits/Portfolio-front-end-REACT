@@ -4,7 +4,7 @@ import {CopyToClipboard} from 'react-copy-to-clipboard';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Link } from "react-router-dom";
-
+import Header from "../../../components/Header";
 
 // Classificar senhas
 //Colocar Abbr no inicio meio fim
@@ -392,90 +392,96 @@ export default function PssGen(){
 
       if(gerado){ //se a senha ja tiver sido gerada
           return(
-          <div className="conclusao">
-              <h1 className="titulo-pss2" >Sua senha:<br/><p>{senha}</p></h1>
-              {/* Copiar para o clipboar */}
-              <CopyToClipboard text={senha}> 
-                  <button className="botao-pss2" onClick={() => {toast.success('COPIADO!!!');}}>Copiar senha</button>
-              </CopyToClipboard>
-              {/* salvar nova senha */}
-              <button className="botao-pss2" onClick={()=>{salvarSenha()}}>Salvar senha</button> 
-              {/* Ir para senhas ja salvas */}
-              <Link to="projetos/geradorsenhas/salvas"><button className="botao-pss2">Senhas Salvas</button></Link> 
-              <button onClick={()=>{setGerado(false)}} className="botao-pss2">Gerar Nova Senha com caracteristicas diferentes</button>
-              <button onClick={()=>{gerar(); }} className="botao-pss2">Gerar senha com as mesmas caracteristicas</button>
+          <div>
+              <Header/>
+              <div className="conclusao">
+                  <h1 className="titulo-pss2" >Sua senha:<br/><p>{senha}</p></h1>
+                  {/* Copiar para o clipboar */}
+                  <CopyToClipboard text={senha}>
+                      <button className="botao-pss2" onClick={() => {toast.success('COPIADO!!!');}}>Copiar senha</button>
+                  </CopyToClipboard>
+                  {/* salvar nova senha */}
+                  <button className="botao-pss2" onClick={()=>{salvarSenha()}}>Salvar senha</button>
+                  {/* Ir para senhas ja salvas */}
+                  <Link to="geradorsenhas/salvas"><button className="botao-pss2">Senhas Salvas</button></Link>
+                  <button onClick={()=>{setGerado(false)}} className="botao-pss2">Gerar Nova Senha com caracteristicas diferentes</button>
+                  <button onClick={()=>{gerar(); }} className="botao-pss2">Gerar senha com as mesmas caracteristicas</button>
+              </div>
           </div>
           );
       }
 
     return( //se a senha ainda nao tiver sido gerada
-        <div className="conteiner">
-           
-        
-        <h1 id="titulo-pss-main">Password Generator</h1>
+        <div>
+            <Header/>
+            <div className="conteiner">
             
-            {/* quantidade de caracteres */}
-            <div className="itens">
-                <p className="Item-pss">Força da senha </p>
-                
-                {/* Aqui mostra a força da senha */}
-                { forca() <= 12 ? <p className="Item-pss forca" id="muito-fraco">Muito fraca</p> 
-                : forca() <= 144 ? <p className="Item-pss forca" id="fraco">Fraca </p>
-                : forca() <= 252 ? <p className="Item-pss forca" id="media">Média</p>
-                : forca() <= 288 ? <p className="Item-pss forca" id="forte">Forte</p>
-                : forca() <= 432 ? <p className="Item-pss forca" id="muito-forte">Muito Forte</p>
-                : forca() <= 864 ? <p className="Item-pss forca" id="absurdo">Me explica o que você quer com essa senha</p>
-                : <p className="Item-pss forca" id="easterEgg">Como você chegou até aqui?</p>}
-
-                <p className="Item-pss">Quantos caracteres você deseja?
-                    <abbr title={duvidaCarac} id="duvida">?</abbr>
-                </p>
-                <input type="number" min={4} value={carac} onInput={(e)=>{setCarac(e.target.value); }} className="Item-pss" id="input-pss"/>
-
-                <p className="Item-pss">Deseja caracteres especiais?</p>
-                <input type="checkbox" checked={simEsp} onChange={()=>{handleChangeEsp()}} className="Item-pss"/>Sim
-                <input type="checkbox" checked={naoEsp} onChange={()=>{handleChangeEsp()}}className="Item-pss"/>Não 
-
-                <p className="Item-pss">Deseja Números?</p>
-                <input type="checkbox" checked={simNum} onChange={()=>{handleChangeNum()}} className="Item-pss"/>Sim 
-                <input type="checkbox" checked={naoNum} onChange={()=>{handleChangeNum()}} className="Item-pss"/>Não 
-
-                <p className="Item-pss">Deseja maiusculas e minusculas?</p>
-                <input type="checkbox" checked={simMai} onChange={()=>{handleChangeMai()}} className="Item-pss"/>Sim
-                <input type="checkbox" checked={naoMai} onChange={()=>{handleChangeMai()}} className="Item-pss"/>Não
-
-                <p className="Item-pss">Deseja personalizar sua senha com um texto? 
-                    <abbr title={duvidaPersonalizado} id="duvida">?</abbr>
-                </p>
-                <input type="checkbox" checked={simPers} onChange={()=>{handleChangePers()}} className="Item-pss"/>Sim
-                <input type="checkbox" checked={naoPers} onChange={()=>{handleChangePers()}} className="Item-pss"/>Não
-
-                {/* Caso o usuário deseje a senha persnoalizada */}
-                {simPers && <div>
-                    <p className="Item-pss">Digite a palavra desejada: </p>
-                    <input type="text" className="Item-pss" id="input-pss" onChange={(e) => {setPersonalizada(e.target.value)}}/>
-                    <p className="Item-pss">Deseja embaralhar essa palavra?</p>
-                    <input type="checkbox" checked={simEmb} onChange={()=>{handleChangeEmb()}} className="Item-pss"/>Sim
-                    <input type="checkbox" checked={naoEmb} onChange={()=>{handleChangeEmb()}} className="Item-pss"/>Não
+            
+            <h1 id="titulo-pss-main">Password Generator</h1>
+            
+                {/* quantidade de caracteres */}
+                <div className="itens">
+                    <p className="Item-pss">Força da senha </p>
+            
+                    {/* Aqui mostra a força da senha */}
+                    { forca() <= 12 ? <p className="Item-pss forca" id="muito-fraco">Muito fraca</p>
+                    : forca() <= 144 ? <p className="Item-pss forca" id="fraco">Fraca </p>
+                    : forca() <= 252 ? <p className="Item-pss forca" id="media">Média</p>
+                    : forca() <= 288 ? <p className="Item-pss forca" id="forte">Forte</p>
+                    : forca() <= 432 ? <p className="Item-pss forca" id="muito-forte">Muito Forte</p>
+                    : forca() <= 864 ? <p className="Item-pss forca" id="absurdo">Me explica o que você quer com essa senha</p>
+                    : <p className="Item-pss forca" id="easterEgg">Como você chegou até aqui?</p>}
+                    <p className="Item-pss">Quantos caracteres você deseja?
+                        <abbr title={duvidaCarac} id="duvida">?</abbr>
+                    </p>
+                    <input type="number" min={4} value={carac} onInput={(e)=>{setCarac(e.target.value); }} className="Item-pss" id="input-pss"/>
+                    <p className="Item-pss">Deseja caracteres especiais?</p>
+                    <input type="checkbox" checked={simEsp} onChange={()=>{handleChangeEsp()}} className="Item-pss"/>Sim
+                    <input type="checkbox" checked={naoEsp} onChange={()=>{handleChangeEsp()}}className="Item-pss"/>Não
+                    <p className="Item-pss">Deseja Números?</p>
+                    <input type="checkbox" checked={simNum} onChange={()=>{handleChangeNum()}} className="Item-pss"/>Sim
+                    <input type="checkbox" checked={naoNum} onChange={()=>{handleChangeNum()}} className="Item-pss"/>Não
+                    <p className="Item-pss">Deseja maiusculas e minusculas?</p>
+                    <input type="checkbox" checked={simMai} onChange={()=>{handleChangeMai()}} className="Item-pss"/>Sim
+                    <input type="checkbox" checked={naoMai} onChange={()=>{handleChangeMai()}} className="Item-pss"/>Não
+                    <p className="Item-pss">Deseja personalizar sua senha com um texto?
+                        <abbr title={duvidaPersonalizado} id="duvida">?</abbr>
+                    </p>
+                    <input type="checkbox" checked={simPers} onChange={()=>{handleChangePers()}} className="Item-pss"/>Sim
+                    <input type="checkbox" checked={naoPers} onChange={()=>{handleChangePers()}} className="Item-pss"/>Não
+                    {/* Caso o usuário deseje a senha persnoalizada */}
+                    {simPers && <div>
+                        <p className="Item-pss">Digite a palavra desejada: </p>
+                        <input type="text" className="Item-pss" id="input-pss" onChange={(e) => {setPersonalizada(e.target.value)}}/>
+                        <p className="Item-pss">Deseja embaralhar essa palavra?</p>
+                        <input type="checkbox" checked={simEmb} onChange={()=>{handleChangeEmb()}} className="Item-pss"/>Sim
+                        <input type="checkbox" checked={naoEmb} onChange={()=>{handleChangeEmb()}} className="Item-pss"/>Não
+                    </div>
+                    }
+                    {naoEmb &&
+                        <div>
+                            <p className="Item-pss">Deseja a palavra personalizada no: </p>
+                            <div className="emb">
+                                <p ><input type="checkbox" checked={inicio} onChange={()=>{handleChangeInicioMeioFim(1)}} className="Item-pss"/>inicio da senha</p>
+                                <p><input type="checkbox" checked={meio} onChange={()=>{handleChangeInicioMeioFim(2)}} className="Item-pss"/>meio da senha</p>
+                                <p><input type="checkbox" checked={fim} onChange={()=>{handleChangeInicioMeioFim(3)}} className="Item-pss"/>final da senha</p>
+                            </div>
+            
+                    </div>}
                 </div>
-                }
-                {naoEmb && 
-                    <div>
-                        <p className="Item-pss">Deseja a palavra personalizada no: </p>
-                        <div className="emb">
-                            <p ><input type="checkbox" checked={inicio} onChange={()=>{handleChangeInicioMeioFim(1)}} className="Item-pss"/>inicio da senha</p>
-                            <p><input type="checkbox" checked={meio} onChange={()=>{handleChangeInicioMeioFim(2)}} className="Item-pss"/>meio da senha</p>
-                            <p><input type="checkbox" checked={fim} onChange={()=>{handleChangeInicioMeioFim(3)}} className="Item-pss"/>final da senha</p>
-                        </div>
-                    
-                </div>}
-
+            
+                {/* botao para gerar senha */}
+                <p><button onClick={()=>{gerar()}} className="botao-pss">Gerar Senha</button></p>
+                
             </div>
-
-            
-            {/* botao para gerar senha */}
-            <p><button onClick={()=>{gerar()}} className="botao-pss">Gerar Senha</button></p> 
-            
+            <div className="sobre-projetos">
+                <h2>Sobre o projeto</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate quo, ipsam voluptas impedit dicta maxime fugiat sapiente culpa illum! Quo, blanditiis aliquid repellat incidunt doloribus reiciendis magni officiis iste quos?</p>
+                
+                <h2>Tempo dedicado: <span>8-10 horas</span> </h2>
+                
+                
+            </div>
         </div>
     )
 }

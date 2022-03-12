@@ -1,7 +1,9 @@
-import Header from "../../components/Header"
-import './projetos.css'
-import imgCalculadora from '../../assets/calculadora.png'
-import imgCronometro from '../../assets/cronometro.png'
+import Header from "../../components/Header";
+import './projetos.css';
+import imgCalculadora from '../../assets/calculadora.png';
+import imgCronometro from '../../assets/cronometro.png';
+import imgGerador from '../../assets/gerados.png';
+import imgTarefas from '../../assets/tarefas.png';
 import { Link } from "react-router-dom"
 export default function Projetos(){
     return(
@@ -26,6 +28,9 @@ export default function Projetos(){
                     <h3>Calculadora</h3>
                     <Link to="/projetos/calculadora"><img id="calculadora" src={imgCalculadora} /></Link>
                     <Link to="/projetos/cronometro"><img id="cronometro" src={imgCronometro} /></Link>
+                    <Link to="/projetos/geradorsenhas"><img id="gerador" src={imgGerador} /></Link>
+                    <Link to="/projetos/tarefas"><img id="tarefas" src={imgTarefas} /></Link>
+                    
                 </div>
             </div>
         </div>
