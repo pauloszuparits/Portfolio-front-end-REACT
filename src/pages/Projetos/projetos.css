@@ -12,9 +12,7 @@
     width: 70%;
 }
 
-.projetos-react{
-    margin-left: 20px;
-}
+
 
 #titulo-projetos-react{
     margin-bottom: 20px;
@@ -29,11 +27,50 @@
     margin-bottom: 5px;
 }
 
-#cronometro{
-    height: 177px;
+.imagens-projetos{
+    display: flex;
+    justify-content: space-between;
 }
 
-#calculadora{
-    height: 179px;
+.imgProjetos img{
+    width: 190px;
 }
 
+
+.imgProjetos{
+    border: solid 2px #092e6d;
+    border-radius: 10px;
+    padding: 10px;
+    transition: ease-in 0.2s;
+}
+
+.imgProjetos svg{
+    position: relative;
+    top: .24em;
+}
+
+.imgProjetos a{
+    color: #114bad;
+}
+
+.imgProjetos p:hover{
+    transform: scale(1.05);
+    color: #1f71ff;
+}
+
+.imgProjetos p{
+    font-weight: 400;
+    transition: ease-in 0.2s;
+}
+
+.imgProjetos:hover{
+    transform: scale(1.1);
+}
+
+.imgProjetos:first-child{
+    margin-left: 20px;
+}
+
+.imgProjetos:last-child{
+    margin-right: 20px;
+}

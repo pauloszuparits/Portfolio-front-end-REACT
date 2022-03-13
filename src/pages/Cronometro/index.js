@@ -48,7 +48,7 @@ export default function Cronometro(){
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis at illo facere enim saepe doloribus fuga! Sunt corrupti voluptatum harum id dolorum repellat. Aut explicabo nam repudiandae exercitationem quos non.</p>
                     
                     <h2>Tempo dedicado: <span>30-45 minutos</span> </h2>
-                </div>
+            </div>
         </div>
     );
 }
