@@ -1,26 +1,50 @@
 .titulo-projetos{
     text-align: center;
     padding: 8px;
+    margin-top: 15px;
+    margin-bottom: 9px;
 }
+
+
 
 .texto-projetos{
     display: flex;
     margin: auto;
     font-size: 1.2em;
     text-align: center;
-    margin-bottom: 8px;
+    margin-bottom: 30px;
     width: 70%;
 }
 
 
-
-#titulo-projetos-react{
+.titulo-projetos2{
     margin-bottom: 20px;
     margin-left: 10px;
+    background-color: #1149aa;
+    color: white;
+    width: 253px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: 14px;
+    font-size: 1.2em;
+}
+
+
+
+.projetos-react{
+    margin-bottom: 50px;
+    
+}
+
+.projetos-react:last-child{
+    padding-bottom: 50px;
 }
 
 .projetos-react img{
     width: 250px;
+    
 }
 
 .projetos-react h3{
@@ -30,6 +54,7 @@
 .imagens-projetos{
     display: flex;
     justify-content: space-between;
+    
 }
 
 .imgProjetos img{
@@ -41,6 +66,7 @@
     border: solid 2px #092e6d;
     border-radius: 10px;
     padding: 10px;
+    
     transition: ease-in 0.2s;
 }
 
@@ -73,4 +99,8 @@
 
 .imgProjetos:last-child{
     margin-right: 20px;
+}
+
+.imgProjetos a p{
+    margin-top: 15px;
 }
