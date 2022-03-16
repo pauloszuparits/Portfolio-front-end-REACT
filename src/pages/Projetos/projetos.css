@@ -5,8 +5,6 @@
     margin-bottom: 9px;
 }
 
-
-
 .texto-projetos{
     display: flex;
     margin: auto;
@@ -31,7 +29,9 @@
     font-size: 1.2em;
 }
 
-
+.hotdog{
+    display: none;
+}
 
 .projetos-react{
     margin-bottom: 50px;
@@ -103,4 +103,85 @@
 
 .imgProjetos a p{
     margin-top: 15px;
+}
+
+
+@media screen and (max-width: 560px) {
+    #logo-principal{
+        display: none;
+    }
+
+    .botoes-cabecalho{
+        display: none;
+    }
+
+    .hotdog{
+        display: block;
+    }
+
+    .projetos-react h2{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .imagens-projetos{
+        display: block;
+        width: 300px;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .imgProjetos{
+        margin-bottom: 20px;
+        
+    }
+
+    .titulo-projetos2{
+        justify-content: center;
+        font-size: 1.6em;
+        height: 60px;
+    }
+
+    .imgProjetos:first-child{
+        margin-left: 0px;
+    }
+    
+    .imgProjetos:last-child{
+        margin-right: 0px;
+    }
+
+    .chatbot{
+        margin-bottom: 200px;
+    }
+}
+
+@media screen and  (max-width: 1000px){
+    .projetos-react h2{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .titulo-projetos2{
+        justify-content: center;
+        font-size: 1.4em;
+        height: 54px;
+    }
+
+    .imagens-projetos{
+        display: block;
+        
+    }
+
+    .imgProjetos:first-child{
+        margin-left: 19px;
+    }
+    
+    
+
+    .imgProjetos{
+        display: inline-block;
+        margin-left: 19px;
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
+    
 }

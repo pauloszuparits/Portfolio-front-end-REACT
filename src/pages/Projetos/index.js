@@ -101,8 +101,8 @@ export default function Projetos(){
                             <p>Acessar este projeto no GitHub <AiOutlineArrowRight/></p>
                             </a>
                         </div>
-                        {/* dfsdf */}
-                        <div className="imgProjetos">
+                        
+                        <div className="imgProjetos chatbot">
                             <h3>ChatBot (Java) </h3>
                             <Link to="/projetos/chatbot"><img id="tarefas" src={imgChat} /></Link>
                             <Link to="/projetos/chatbot"> <p>Saiba mais sobre esse projeto <AiOutlineArrowRight/></p>  </Link>

@@ -26,3 +26,8 @@
     background-color: #011029;
     border: solid 1px white;
 }
+
+.hotdog button{
+    background-color: transparent;
+    border: none;
+}
