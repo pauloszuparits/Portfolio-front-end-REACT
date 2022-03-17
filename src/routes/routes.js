@@ -11,6 +11,8 @@ import JogoVelha from "../pages/JogoVelha";
 import BlackJack from "../pages/BlackJack";
 import Craps from "../pages/Craps";
 import ChatBot from "../pages/ChatBot";
+import Cadastro from "../pages/Cadastro";
+import Login from "../pages/Login";
 export default function Routes(){
     return(
         <Switch>
@@ -25,6 +27,8 @@ export default function Routes(){
             <Route exact path="/projetos/blackjack" component={BlackJack}/>
             <Route exact path="/projetos/craps" component={Craps}/>
             <Route exact path="/projetos/chatbot" component={ChatBot}/>
+            <Route exact path="/cadastro" component={Cadastro}/>
+            <Route exact path="/login" component={Login}/>
             
              
         </Switch>
