@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom"
 import './header.css'
 import {AiOutlineMenu} from 'react-icons/ai'
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { AuthContext } from "../../contexts/Auth"
 export default function Header(){
     const [sideBar, setSideBar] = useState(false);
+    const {singed} = useContext(AuthContext);
+
 
     function handleChange(){
         setSideBar(!sideBar);
@@ -24,10 +27,14 @@ export default function Header(){
                 <div>
                     <h2 id="logo-principal">Paulo Szuparits</h2>
                 </div>
-                <div className="botoes-cabecalho">
-                    <Link to="/cadastro">Cadastre-se</Link>
-                    <Link to="/login">Login</Link>
-                </div>
+                {singed ?
+                    <div>TESTE</div>
+                    :
+                    <div className="botoes-cabecalho">
+                        <Link to="/cadastro">Cadastre-se</Link>
+                        <Link to="/login">Login</Link>
+                    </div>
+                }
             </div>
         </div>
     )

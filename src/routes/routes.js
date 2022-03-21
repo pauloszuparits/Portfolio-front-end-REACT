@@ -1,4 +1,4 @@
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 
 import Home from "../pages/Home";
 import Projetos from "../pages/Projetos";
@@ -13,9 +13,16 @@ import Craps from "../pages/Craps";
 import ChatBot from "../pages/ChatBot";
 import Cadastro from "../pages/Cadastro";
 import Login from "../pages/Login";
+import Dashboard from "../Dashboard/dashboard";
+import { AuthContext } from "../contexts/Auth";
+import { useContext } from "react";
 export default function Routes(){
+    
+    
     return(
+
         <Switch>
+            
             <Route exact path="/" component={Home}/>
             <Route exact path="/projetos" component={Projetos}/>
             <Route exact path="/projetos/calculadora" component={Calculadora}/>
@@ -29,6 +36,7 @@ export default function Routes(){
             <Route exact path="/projetos/chatbot" component={ChatBot}/>
             <Route exact path="/cadastro" component={Cadastro}/>
             <Route exact path="/login" component={Login}/>
+            <Route exact path="/dashboard" component={Dashboard}/>
             
              
         </Switch>

@@ -1,0 +1,53 @@
+.campos-cadastro{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    border: solid 1px #0B3C8F;
+    border-radius: 5px;
+    background-color: #041636a2;
+    color: white;
+    width: 300px;
+    padding-top: 15px;
+}
+.campos-cadastro p{
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+.campos-cadastro input{
+    width: 230px;
+    height: 30px;
+    padding: 3px;
+    border-radius: 5px;
+    border: none;
+    transition: ease-in 0.2s;
+    
+}
+.campos-cadastro input:focus{
+    border: solid 1px #06214F;
+    transform: scale(1.07);
+}
+
+.campos-cadastro button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+
+    background-color: #06214F;
+    padding: 4px 8px;
+    border-radius: 7px;
+    font-size: 1.6em;
+    color: white;
+    transition: ease-in 0.2s;
+    margin-right: 8px;
+}
+
+.campos-cadastro button:hover{
+    transform: scale(1.1);
+    background-color: #011029;
+    border: solid 1px white;
+}

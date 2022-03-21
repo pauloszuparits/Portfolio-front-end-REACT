@@ -1,5 +1,7 @@
 import firebase from 'firebase/app';
+import 'firebase/auth';
 import 'firebase/firestore';
+import 'firebase/storage'
 
 
 const firebaseConfig = {
@@ -12,7 +14,7 @@ const firebaseConfig = {
     measurementId: "G-V5E8VMNZ65"
   };
 
-  if(!firebase.apps.length){
+if(!firebase.apps.length){
       firebase.initializeApp(firebaseConfig);
   }
 
