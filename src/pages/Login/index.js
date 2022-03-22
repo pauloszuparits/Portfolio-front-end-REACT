@@ -2,7 +2,7 @@ import Header from "../../components/Header"
 import { useContext, useState } from "react";
 import { AuthContext } from "../../contexts/Auth";
 import { Link } from "react-router-dom";
-
+import './login.css'
 
 export default function Login(){
     const [email, setEmail] = useState('');
@@ -18,9 +18,11 @@ export default function Login(){
         return(
             <div>
                 <Header/>
-                <div>
-                    <h1>Acesse seu dashboard</h1>
-                    <Link to="/dashboard">Clique aqui</Link>
+                <div className="redirect">
+                    <h2>Você esta logado!</h2>
+                    
+                        <Link to="/dashboard"><button>Clique aqui para acessar seu perfil</button></Link>
+                    
                 </div>
             </div>
         );

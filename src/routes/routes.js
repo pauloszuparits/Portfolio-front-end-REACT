@@ -13,9 +13,8 @@ import Craps from "../pages/Craps";
 import ChatBot from "../pages/ChatBot";
 import Cadastro from "../pages/Cadastro";
 import Login from "../pages/Login";
-import Dashboard from "../Dashboard/dashboard";
-import { AuthContext } from "../contexts/Auth";
-import { useContext } from "react";
+import Dashboard from "../Dashboard";
+
 export default function Routes(){
     
     

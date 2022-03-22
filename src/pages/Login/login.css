@@ -1,0 +1,29 @@
+.redirect{
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    background-color: #0B3C8F;
+    color: white;
+    
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.redirect a{
+    color: #0B3C8F;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.redirect button{
+    margin-top: 20px;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    transition: ease-in 0.2s;
+}
+
+.redirect button:hover{
+    background-color: rgb(187, 187, 187);
+    transform: scale(1.1);
+}

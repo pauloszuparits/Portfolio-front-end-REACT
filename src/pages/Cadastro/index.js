@@ -3,22 +3,26 @@ import Header from "../../components/Header";
 import './cadastro.css';
 import { AuthContext } from "../../contexts/Auth";
 import { toast } from "react-toastify";
+import { Link } from "react-router-dom";
+
 export default function Cadastro(){
     const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
+    const [empresa, setEmpresa] = useState('');
     const [senha, setSenha] = useState('');
     const [senhaCon, setSenhaCon] = useState('');
 
-    const{cadastro, loading} = useContext(AuthContext);
+    const{cadastro, loading, singed} = useContext(AuthContext);
 
     function handleSubmit(e){
         e.preventDefault();
         if(nome !== '' && email !== '' && senha !== '' && senhaCon !== ''){
             if(senha === senhaCon){
-                cadastro(email, senha, nome);
+                cadastro(email, senha, nome, empresa);
     
                 setNome('');
                 setEmail('');
+                setEmpresa('');
                 setSenha('');
                 setSenhaCon('');
             }else{
@@ -29,6 +33,19 @@ export default function Cadastro(){
         }else{
             toast.error('Algum campo não foi preenchido, preencha e tente novamente')
         }
+    }
+    if(singed){
+        return(
+            <div>
+                <Header/>
+                <div className="redirect">
+                    <h2>Agora você já pode acessar seu perfil</h2>
+                    
+                        <Link to="/dashboard"><button>Clique aqui para acessar seu perfil</button></Link>
+                    
+                </div>
+            </div>
+        );
     }
 
     return(
@@ -43,6 +60,8 @@ export default function Cadastro(){
                     <input type="text"  placeholder="José Pereria" onChange={(e)=>{setNome(e.target.value)}}/>
                     <p>Email</p>
                     <input type="text"  placeholder="jose.pereira@gmail.com" onChange={(e)=>{setEmail(e.target.value)}}/>
+                    <p>Empresa em que trabalha</p>
+                    <input type="text"  placeholder="Origin Company" onChange={(e)=>{setEmpresa(e.target.value)}}/>
                     <p>Senha</p>
                     <input type="password" placeholder="*******" onChange={(e)=>{setSenha(e.target.value)}}/>
                     <p>Confirmar senha</p>

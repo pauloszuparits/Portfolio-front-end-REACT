@@ -6,7 +6,7 @@
     color: white;
     background-color: #0B3C8F;
     border-radius: 0 0 2px 2px;
-    height: 60px;
+    height: 80px;
 }
 
 .botoes-cabecalho a{
@@ -35,4 +35,21 @@
 .menu-hotdog{
     width: 100%;
     height: 100%;
+}
+
+.user-profile-head{
+    display: flex;
+    align-items: center;
+}
+
+.botoes-user{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-profile-head img{
+    
+    border-radius: 50%;
+    
 }

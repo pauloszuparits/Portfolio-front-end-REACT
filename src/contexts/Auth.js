@@ -8,6 +8,8 @@ function AuthProvider({children}){
     const [loading, setLoading] = useState(false);
     const [user, setUser] = useState(null);
 
+    
+
     useEffect(()=>{
 
         function loadStorage(){
@@ -16,7 +18,7 @@ function AuthProvider({children}){
                 setUser(JSON.parse(storageUser));
                 setLoading(false);
             }
-
+    
             setLoading(false);
         }
         loadStorage();
@@ -37,6 +39,7 @@ function AuthProvider({children}){
                 uid: uid,
                 nome: userProfile.data().nome,
                 avatarUrl: userProfile.data().avatarUrl,
+                empresa: userProfile.data().empresa,
                 email: value.user.email
             }
 
@@ -51,7 +54,7 @@ function AuthProvider({children}){
         })
     }
 
-    async function cadastro(email, senha, nome){
+    async function cadastro(email, senha, nome, empresa){
         setLoading(true);
         await firebase.auth().createUserWithEmailAndPassword(email, senha)
         .then(async(value)=>{
@@ -60,6 +63,7 @@ function AuthProvider({children}){
             await firebase.firestore().collection('users')
             .doc(uid).set({
                 nome: nome,
+                empresa: empresa,
                 avatarUrl: null,
             })
             .then(()=>{
@@ -67,6 +71,7 @@ function AuthProvider({children}){
                     uid: uid,
                     nome: nome,
                     email: value.user.email,
+                    empresa: empresa,
                     avatarUrl: null
                 };
 
@@ -101,7 +106,10 @@ function AuthProvider({children}){
             loading,
             cadastro,
             logar,
-            deslogar
+            deslogar, 
+            setUser,
+            storeUser,
+            
         }}>
             {children}
         </AuthContext.Provider>
