@@ -35,11 +35,13 @@ export default function Login(){
             </div>
             <div className="campos-cadastro">
                 <form onSubmit={login}>
-                    <p>Email</p>
-                    <input type="text"  placeholder="jose.pereira@gmail.com" onChange={(e)=>{setEmail(e.target.value)}}/>
-                    <p>Senha</p>
-                    <input type="password" placeholder="*******" onChange={(e)=>{setSenha(e.target.value)}}/>
-                    <button type="submit">Login</button>
+                    <div>
+                        <p>Email</p>
+                        <input type="text"  placeholder="jose.pereira@gmail.com" onChange={(e)=>{setEmail(e.target.value)}}/>
+                        <p>Senha</p>
+                        <input type="password" placeholder="*******" onChange={(e)=>{setSenha(e.target.value)}}/>
+                    </div>
+                    <div className="botao-carregando"><button type="submit">{loading ? <div><div className="texto-carregando">Carregando</div> <div className="carregando">......</div></div>: ("Login")}</button></div>
                 </form>
             </div>
         </div>

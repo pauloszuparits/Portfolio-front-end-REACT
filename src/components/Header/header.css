@@ -51,5 +51,33 @@
 .user-profile-head img{
     
     border-radius: 50%;
-    
+    border: solid 0.5px white;
+    transition: ease-in 0.2s;
+}
+
+.user-profile-head img:hover{
+    transform: scale(1.1);
+}
+
+.user-profile-head button{
+    /* margin-right: 10px;
+    padding: 4px;
+    border-radius: 5px;
+    border: none; */
+
+    background-color: #06214F;
+    padding: 4px 8px;
+    border-radius: 7px;
+    border: none;
+    font-size: 1.2em;
+    color: white;
+    transition: ease-in 0.2s;
+    margin-right: 8px;
+    transition: ease-in 0.2s;
+}
+
+.user-profile-head button:hover{
+    transform: scale(1.1);
+    background-color: #011029;
+    border: solid 1px white;
 }

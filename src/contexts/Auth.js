@@ -90,7 +90,8 @@ function AuthProvider({children}){
 
     async function deslogar(){
         await firebase.auth().signOut();
-        localStorage.removeItem('SistemaUser')
+        localStorage.removeItem('SistemaUser');
+        toast.success('Até mais!');
         setUser(null);
     }
 

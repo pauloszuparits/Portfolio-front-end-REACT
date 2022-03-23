@@ -36,9 +36,9 @@ export default function Header(){
                             <Link to="/dashboard"><button>Meu Perfil</button></Link>
                         </div>
                         {user.avatarUrl === null ?
-                            <img src={avatar} alt="avatar" width="35" height="35"/>
+                            <img src={avatar} alt="avatar" width="50" height="50"/>
                         :
-                            <img src={user.avatarUrl} alt="avatar" width="35" height="35"/>
+                            <img src={user.avatarUrl} alt="avatar" width="50" height="50"/>
                         }
                     </div>
                     :
