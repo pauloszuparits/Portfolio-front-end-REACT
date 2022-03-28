@@ -59,3 +59,43 @@
     font-weight: 100;
     font-size: 0.9em;
 }
+
+@media screen and (max-width: 560px){
+    .botoes button{
+        width: 80px;
+    }
+
+    .projetos{
+        width: 95%;
+    }
+
+    #input{
+        width: 274px;
+    }
+
+    .sobre-projetos{
+        font-size: 1.6em;
+        text-align: center;
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .botoes button{
+        width: 70px;
+    }
+
+    .projetos{
+        width: 95%;
+    }
+
+    #input{
+        width: 250px;
+    }
+
+    .sobre-projetos{
+        font-size: 1.6em;
+        text-align: center;
+        padding-bottom: 100px;
+    }
+}

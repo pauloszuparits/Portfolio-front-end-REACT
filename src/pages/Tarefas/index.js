@@ -101,100 +101,102 @@ export default function Tarefas(){
             <div className="titulo-tarefas-conteiner">
                 
                     
-                        <div>
-                            <h1 className="item-titulo-tarefa">Suas Tarefas</h1>
-                            <div className="input-tarefa">
-                                <p className="item-titulo-tarefa">Titulo da Tarefa</p>
-                                <input className="item-titulo-tarefa" id="titulo-tarefa" type="text" value = {tarefa} onChange={(e)=>{setTarefa(e.target.value)}}/>
-                                <p className="item-titulo-tarefa">Descrição da Tarefa</p>
-                                <textarea className="item-titulo-tarefa" value={descricao} onChange={(e)=>{setDescricao(e.target.value)}} id="descricao-tarefa"></textarea>
-                                <p className="item-titulo-tarefa" id="slct-cor">Selecione a cor que você deseja</p>
-                                <select onChange={(e)=>{setCor(e.target.value)}} className="item-titulo-tarefa">
-                                    <option value="amarelo" selected>amarelo</option>
-                                    <option value="laranja">laranja</option>
-                                    <option value="vermelho">vermelho</option>
-                                    <option value="verde">verde</option>
-                                    <option value="azul">azul</option>
-                                </select>
-                            </div>
-                        </div>
-
-                <div>
-                    <h2>Legenda</h2>
-                    
-                        <div>
-                            <h3>Digite a legenda para cada cor</h3>
-                            {amareloB ?
-                            <div className="legenda">
-                                <p className="titulo-legenda">🟨 - Amarelo - {amareloLeg} <button onClick={()=>{setAmareloB(false)}} className="botao-tarefa botao-legenda">Editar</button> </p>
-                            </div>
-                            :
-                            <div className="legenda">
-                                <p className="titulo-legenda">🟨 - Amarelo</p>
-                                <input type="text" value={amareloLeg}
-                                onChange={(e)=>{setAmareloLeg(e.target.value)}}/>
-                                <button onClick={()=>{setAmareloB(true)}} className="botao-tarefa botao-legenda">Adicionar</button>
-                                
-                            </div>
-                            }
-                            {laranjaB ?
+                        
                             <div>
-                                <p>🟧 - Laranja {laranjaLeg}</p>
-                                <button onClick={()=>{setLaranjaB(false)}} className="botao-tarefa botao-legenda">Editar</button>
+                                <h1 className="item-titulo-tarefa">Suas Tarefas</h1>
+                                <div className="input-tarefa">
+                                    <p className="item-titulo-tarefa">Titulo da Tarefa</p>
+                                    <input className="item-titulo-tarefa" id="titulo-tarefa" type="text" value = {tarefa} onChange={(e)=>{setTarefa(e.target.value)}}/>
+                                    <p className="item-titulo-tarefa">Descrição da Tarefa</p>
+                                    <textarea className="item-titulo-tarefa" value={descricao} onChange={(e)=>{setDescricao(e.target.value)}} id="descricao-tarefa"></textarea>
+                                    <p className="item-titulo-tarefa" id="slct-cor">Selecione a cor que você deseja</p>
+                                    <select onChange={(e)=>{setCor(e.target.value)}} className="item-titulo-tarefa">
+                                        <option value="amarelo" selected>amarelo</option>
+                                        <option value="laranja">laranja</option>
+                                        <option value="vermelho">vermelho</option>
+                                        <option value="verde">verde</option>
+                                        <option value="azul">azul</option>
+                                    </select>
+                                </div>
                             </div>
-                            :
-                            <div>
-                                <p>🟧 - Laranja</p>
-                                <input type="text" value={laranjaLeg}
-                                onChange={(e)=>{setLaranjaLeg(e.target.value)}}/>
-                                <button onClick={()=>{setLaranjaB(true)}} className="botao-tarefa botao-legenda">Adicionar</button>
-                            </div>
-                            }
-                            {vermelhoB ?
-                            <div>
-                                <p>🟥 - Vermelho {vermelhoLeg}</p>
-                                <button onClick={()=>{setVermelhoB(false)}} className="botao-tarefa botao-legenda">Editar</button>
-                            </div>
-                            :
-                            <div>
-                                <p>🟥 - Vermelho</p>
-                                <input type="text" value={vermelhoLeg}
-                                onChange={(e)=>{setVermelhoLeg(e.target.value)}}/>
-                                <button onClick={()=>{setVermelhoB(true)}} className="botao-tarefa botao-legenda">Adicionar</button>
-                            </div>
-                            }
-                            {verdeB ?
-                            <div>
-                                <p>🟩 - Verde {verdeLeg}</p>
-                                <button onClick={()=>{setVerdeB(false)}} className="botao-tarefa botao-legenda">Editar</button>
-                            </div>
-                            :
-                            <div>
-                                <p>🟩 - Verde</p>
-                                <input type="text" value={verdeLeg}
-                                onChange={(e)=>{setVerdeLeg(e.target.value)}}/>
-                                <button onClick={()=>{setVerdeB(true)}} className="botao-tarefa botao-legenda">Adicionar</button>
-                            </div>
-                            }
-                            {azulB ?
-                            <div>
-                                <p>🟦 - Azul {azulLeg}</p>
-                                <button onClick={()=>{setAzulB(false)}} className="botao-tarefa botao-legenda">Editar</button>
-                            </div>
-                            :
-                            <div>
-                                <p>🟦 - Azul</p>
-                                <input type="text" value={azulLeg}
-                                onChange={(e)=>{setAzulLeg(e.target.value)}}/>
-                                <button onClick={()=>{setAzulB(true)}} className="botao-tarefa botao-legenda">Adicionar</button>
-                            </div>
-                            }
                             
+                            <div>
+                           
+                            <div className="legendas">
+                                <h2>Legenda</h2>
+                                <h3>Digite a legenda para cada cor</h3>
+                                {amareloB ?
+                                <div className="legenda">
+                                    <p className="titulo-legenda">🟨 - Amarelo - {amareloLeg} <button onClick={()=>{setAmareloB(false)}} className="botao-tarefa botao-legenda">Editar</button> </p>
+                                </div>
+                                :
+                                <div className="legenda">
+                                    <p className="titulo-legenda">🟨 - Amarelo</p>
+                                    <input type="text" value={amareloLeg}
+                                    onChange={(e)=>{setAmareloLeg(e.target.value)}}/>
+                                    <button onClick={()=>{setAmareloB(true)}} className="botao-tarefa botao-legenda">Adicionar</button>
+                            
+                                </div>
+                                }
+                                {laranjaB ?
+                                <div>
+                                    <p>🟧 - Laranja {laranjaLeg}</p>
+                                    <button onClick={()=>{setLaranjaB(false)}} className="botao-tarefa botao-legenda">Editar</button>
+                                </div>
+                                :
+                                <div>
+                                    <p>🟧 - Laranja</p>
+                                    <input type="text" value={laranjaLeg}
+                                    onChange={(e)=>{setLaranjaLeg(e.target.value)}}/>
+                                    <button onClick={()=>{setLaranjaB(true)}} className="botao-tarefa botao-legenda">Adicionar</button>
+                                </div>
+                                }
+                                {vermelhoB ?
+                                <div>
+                                    <p>🟥 - Vermelho {vermelhoLeg}</p>
+                                    <button onClick={()=>{setVermelhoB(false)}} className="botao-tarefa botao-legenda">Editar</button>
+                                </div>
+                                :
+                                <div>
+                                    <p>🟥 - Vermelho</p>
+                                    <input type="text" value={vermelhoLeg}
+                                    onChange={(e)=>{setVermelhoLeg(e.target.value)}}/>
+                                    <button onClick={()=>{setVermelhoB(true)}} className="botao-tarefa botao-legenda">Adicionar</button>
+                                </div>
+                                }
+                                {verdeB ?
+                                <div>
+                                    <p>🟩 - Verde {verdeLeg}</p>
+                                    <button onClick={()=>{setVerdeB(false)}} className="botao-tarefa botao-legenda">Editar</button>
+                                </div>
+                                :
+                                <div>
+                                    <p>🟩 - Verde</p>
+                                    <input type="text" value={verdeLeg}
+                                    onChange={(e)=>{setVerdeLeg(e.target.value)}}/>
+                                    <button onClick={()=>{setVerdeB(true)}} className="botao-tarefa botao-legenda">Adicionar</button>
+                                </div>
+                                }
+                                {azulB ?
+                                <div>
+                                    <p>🟦 - Azul {azulLeg}</p>
+                                    <button onClick={()=>{setAzulB(false)}} className="botao-tarefa botao-legenda">Editar</button>
+                                </div>
+                                :
+                                <div>
+                                    <p>🟦 - Azul</p>
+                                    <input type="text" value={azulLeg}
+                                    onChange={(e)=>{setAzulLeg(e.target.value)}}/>
+                                    <button onClick={()=>{setAzulB(true)}} className="botao-tarefa botao-legenda">Adicionar</button>
+                                </div>
+                                }
+                            
+                            </div>
+                                                
+                            </div>
+                            
+                        
                         </div>
-                    
-                </div>
-
-            </div>
             
             <div className="botoes-tarefas">
                 <button className="item-titulo-tarefa botao-tarefa" onClick={handleAdd}>Adicionar</button>
@@ -238,11 +240,16 @@ export default function Tarefas(){
                 </div>
             </div>
 
-            <div className="sobre-projetos">
-                    <h2>Sobre o projeto</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis at illo facere enim saepe doloribus fuga! Sunt corrupti voluptatum harum id dolorum repellat. Aut explicabo nam repudiandae exercitationem quos non.</p>
-                    
-                    <h2>Tempo dedicado: <span>30-45 minutos</span> </h2>
+            <div className="sobre-aviso">
+                <div className="sobre-projetos">
+                        <h2>Sobre o projeto</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis at illo facere enim saepe doloribus fuga! Sunt corrupti voluptatum harum id dolorum repellat. Aut explicabo nam repudiandae exercitationem quos non.</p>
+                
+                        <h2>Tempo dedicado: <span>30-45 minutos</span> </h2>
+                </div>
+                <div className="aviso">
+                    <h1>Este projeto ainda não possui suporte para dispositivos moveis :(</h1>
+                </div>
             </div>
         </div>
     );

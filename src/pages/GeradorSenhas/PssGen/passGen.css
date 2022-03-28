@@ -94,7 +94,6 @@ input.Item-pss{
 }
 
 
-
 #titulo-pss-main{
     margin-top: 20px;
     margin-bottom: 10px;
@@ -157,4 +156,18 @@ input.Item-pss{
 
 #easterEgg{
     background-color: black;
+}
+
+@media screen and (max-width: 560px){
+    .conclusao button{
+        width: 90%;
+    }
+    .conclusao a{
+        width: 100%;
+    }
+    .botao-pss2{
+        width: 90%;
+        height: 50px;
+    }
+
 }

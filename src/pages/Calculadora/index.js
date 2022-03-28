@@ -16,6 +16,11 @@ export default function Calculadora(){
     function juntar(){
         let consolidado = input.map(item=>{return item}).join('');//remove as virgulas
         let resultado = eval(consolidado);
+        
+        if(isNaN(resultado) || resultado === Infinity){
+            resultado = 'ERRO!!!';
+            console.log(resultado)
+        }
         setInput([resultado]);
     }
     //função do botao remover -> chamada na seta

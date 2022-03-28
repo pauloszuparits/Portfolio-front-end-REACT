@@ -43,3 +43,22 @@
 #botao-excluir-Psssaved:hover{
     background-color: rgb(204, 204, 204);
 }
+
+@media screen and (max-width: 560px){
+    #lista-Saved{
+        max-width: 96%;
+        margin-left: 0;
+    }
+    #botao-excluir-Psssaved{
+        width: 110px;
+        font-size: 1.1em;
+        padding: 4px;
+    }
+    .conteiner-Saved span{
+        font-size: 1.3em;
+    }
+
+    .conteiner-Saved a{
+        width: 90%;
+    }
+}
