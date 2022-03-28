@@ -11,7 +11,7 @@ export default function Home(){
                     <h1>Projeto portifolio </h1> 
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem consequuntur, officia magnam quaerat quasi vitae et ipsum animi illo delectus eum, vero voluptatem nobis labore quos earum sint recusandae deleniti?</p>
                 </div>
-                <video width="100%"  autoPlay muted loop>
+                <video width="100%" autoPlay muted loop>
                     <source src={videoH} />
                     
                 </video>
