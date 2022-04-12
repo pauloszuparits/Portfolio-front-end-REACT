@@ -243,9 +243,15 @@ export default function Tarefas(){
             <div className="sobre-aviso">
                 <div className="sobre-projetos">
                         <h2>Sobre o projeto</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis at illo facere enim saepe doloribus fuga! Sunt corrupti voluptatum harum id dolorum repellat. Aut explicabo nam repudiandae exercitationem quos non.</p>
+                        <p>
+                        Este organizador de tarefas foi um projeto que utilizou a biblioteca do React Dragabble para que o usuário possa ter uma liberadade em organizar suas tarefas.
+                        <br/>
+                        Ela possui legendas para cada cor disponível, legendas essas que ficam armazenadas no “LocalStorage” para que possam ser consultadas posteriormente no mesmo dispositivo.
+                        <br/>
+                        As tarefas alocadas, também ficam armazenadas no dispositivo. Cada tarefa pode possuir uma descrição que pode ser consultada no ponto de interrogação que fica dentro da tarefa.
+                        </p>
                 
-                        <h2>Tempo dedicado: <span>30-45 minutos</span> </h2>
+                        <h2>Tempo dedicado: <span>5-6 Horas</span> </h2>
                 </div>
                 <div className="aviso">
                     <h1>Este projeto ainda não possui suporte para dispositivos moveis :(</h1>

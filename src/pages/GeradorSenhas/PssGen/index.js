@@ -417,7 +417,7 @@ export default function PssGen(){
             <div className="conteiner">
             
             
-            <h1 id="titulo-pss-main">Password Generator</h1>
+            <h1 id="titulo-pss-main">Gerador de Senhas</h1>
             
                 {/* quantidade de caracteres */}
                 <div className="itens">
@@ -476,7 +476,14 @@ export default function PssGen(){
             </div>
             <div className="sobre-projetos">
                 <h2>Sobre o projeto</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate quo, ipsam voluptas impedit dicta maxime fugiat sapiente culpa illum! Quo, blanditiis aliquid repellat incidunt doloribus reiciendis magni officiis iste quos?</p>
+                <p>
+                    Um dos projetos mais complexos que fiz com o framework React. <br/>
+                    Este projeto se trata de um Gerador de Senhas que possui diversas funcionalidades, a primeira delas é mostrar a força da senha que será gerada, utilizei de uma fórmula simples para gerar a força de acordo com as particularidades de cada senha.
+                    <br/>
+                    O projeto também conta com um armazenamento de senhas local, onde as senhas poderão ser armazenadas no “LocalStorage” e consultadas posteriormente no mesmo dispositivo.
+                    <br/>
+                    Além disso, o gerador de senhas pode gerar uma senha com um texto personalizado também.
+                </p>
                 
                 <h2>Tempo dedicado: <span>8-10 horas</span> </h2>
                 

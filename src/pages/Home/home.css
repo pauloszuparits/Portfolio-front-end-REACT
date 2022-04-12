@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'game';
+    src: url('nasalization-rg.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -29,6 +36,8 @@ html {
     color: white;
     margin-top: 50px;
     font-size: 3.5em;
+    font-family: game;
+    letter-spacing: .6rem;
 }
 
 /* .titulo-home p{
@@ -94,7 +103,7 @@ html {
     margin-top: 20px;
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 300px;
+    margin-bottom: 20px;
 }
 
 .texto-home-1 div{
@@ -102,22 +111,45 @@ html {
     
 }
 
-.texto-home-1 div:last-child{
+.texto-home-1 div:first-child{
     margin-top: 10px;
+    padding-left: 10px;
 }
 
-.texto-home-1 div:first-child{
-    align-self: flex-end;
-    padding-bottom: 30px;
-    padding-left: 10px;
+.intro{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
     
 }
 
+.intro div:first-child{
+    width: 130%;
+}
+
+.texto-home-1 div:last-child{
+    align-self: flex-end;
+    padding-bottom: 30px;
+    padding-right: 10px;
+    text-align: right;
+}
+
 .texto-home-1 hr{
-    transform: rotate(-40deg);
+    transform: rotate(40deg);
     height: 300px;
     margin-top: -36px;
     border: 0.1px solid black;
     background-color: black;
     margin-bottom: -36px;
+}
+
+.texto-home-2{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.mais-projetos{
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
 }

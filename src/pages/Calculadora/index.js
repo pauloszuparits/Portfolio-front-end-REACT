@@ -71,7 +71,10 @@ export default function Calculadora(){
             
             <div className="sobre-projetos">
                 <h2>Sobre o projeto</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate quo, ipsam voluptas impedit dicta maxime fugiat sapiente culpa illum! Quo, blanditiis aliquid repellat incidunt doloribus reiciendis magni officiis iste quos?</p>
+                <p>
+                    Uma calculadora simples com as principais operações, e também com alertas de erro caso a operação seja inválida.<br/>
+                    Este projeto foi feito primeiramente em Javascript puro, e depois, usei o framework React para melhora-lo.
+                </p>
                 
                 <h2>Tempo dedicado: <span>1-2 horas</span> </h2>
                 

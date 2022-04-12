@@ -45,7 +45,7 @@ export default function Cronometro(){
             </div>
             <div className="sobre-projetos">
                     <h2>Sobre o projeto</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis at illo facere enim saepe doloribus fuga! Sunt corrupti voluptatum harum id dolorum repellat. Aut explicabo nam repudiandae exercitationem quos non.</p>
+                    <p>Um cronometro simples com função de começar, pausar e zerar.</p>
                     
                     <h2>Tempo dedicado: <span>30-45 minutos</span> </h2>
             </div>
