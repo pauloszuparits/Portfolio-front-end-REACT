@@ -45,9 +45,6 @@ html {
     padding: 30px;
 } */
 
-.texto-home-1{
-    
-}
 
 .titulo-home button{
     margin-bottom: 10px;
@@ -96,7 +93,7 @@ html {
 }
 
 .texto-home-1{
-    
+    height: 350px;
     display: flex;
     justify-content: space-between;
     border: solid 2.3px black;
@@ -106,9 +103,16 @@ html {
     margin-bottom: 20px;
 }
 
+.texto-home-1 h2{
+    margin-bottom: 10px;
+}
+.texto-home-1 p{
+    line-height: 1.6em;
+}
+
 .texto-home-1 div{
     width: 50%;
-    
+    margin: 8px;
 }
 
 .texto-home-1 div:first-child{
@@ -136,8 +140,8 @@ html {
 
 .texto-home-1 hr{
     transform: rotate(40deg);
-    height: 300px;
-    margin-top: -36px;
+    height: 455px;
+    margin-top: -55px;
     border: 0.1px solid black;
     background-color: black;
     margin-bottom: -36px;

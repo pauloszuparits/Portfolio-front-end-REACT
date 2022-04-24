@@ -14,7 +14,7 @@ import ChatBot from "../pages/ChatBot";
 import Cadastro from "../pages/Cadastro";
 import Login from "../pages/Login";
 import Dashboard from "../Dashboard";
-
+import Sobre from "../Sobre";
 export default function Routes(){
     
     
@@ -36,6 +36,7 @@ export default function Routes(){
             <Route exact path="/cadastro" component={Cadastro}/>
             <Route exact path="/login" component={Login}/>
             <Route exact path="/dashboard" component={Dashboard}/>
+            <Route exact path="/sobre" component={Sobre}/>
             
              
         </Switch>

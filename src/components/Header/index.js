@@ -19,15 +19,14 @@ export default function Header(){
                 <div className="botoes-cabecalho">
                     <Link to="/">Home</Link>
                     <Link to="/projetos">Meus Projetos</Link>
+                    <Link to="/sobre">Sobre Mim</Link>
                 </div>
                 <div className="hotdog">
                     <button onClick={handleChange}>
                         <AiOutlineMenu size={25} color={'#fff'}/>
                     </button>
                 </div>
-                <div>
-                    <h2 id="logo-principal">Paulo Szuparits</h2>
-                </div>
+                
                 {singed ?
                     <div className="user-profile-head">
                         

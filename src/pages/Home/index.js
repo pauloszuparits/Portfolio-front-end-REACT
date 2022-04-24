@@ -40,12 +40,15 @@ export default function Home(){
                 <div className="texto-home-1" ref={ref}>
                     <div>
                         <h2>Sobre mim</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quis repudiandae accusamus similique sed ea. Omnis consectetur quod laudantium, animi quis ducimus eveniet, cumque aperiam doloremque recusandae quisquam neque iure.</p>
+                        <p>Eu sou apaixonado por tecnologia desde pequeno, hoje com meus 20 anos, estou cursando sistemas de informação e me encontro no quinto período do curso.
+                        Sempre trabalhei muito bem em equipe, principalmente na liderança de grupos, lido muito bem com resolução de problemas.</p>
                     </div>
                     <hr/>
                     <div>
                         <h2>Sobre este projeto</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur praesentium tenetur labore eius odit beatae quasi ipsam aliquam facilis totam temporibus fugit provident vitae, laboriosam, velit numquam, laudantium officiis aliquid?</p>
+                        <p>Este projeto consiste em apresentar minhas habilidades de desenvolvimento através da prática, possuindo funcionalidades como cadastrar usuário e efetuar login. Há também alguns de meus projetos que realizei ao longo de minha vida como desenvolvedor.
+                        Utilizei o framework React para realizar este projeto, nele tive aproximadamente 40 horas investidas.
+                        </p>
                     </div>
                 </div>
 
@@ -85,9 +88,7 @@ export default function Home(){
                             <Link to="/projetos"> <p>Acesse aqui mais projetos <AiOutlineArrowRight/></p>  </Link>
                             
                         </div>
-                       
-                           
-                       
+                        
                         
                     </div>
                 </div>
