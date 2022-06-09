@@ -32,7 +32,7 @@ export default function Home(){
                     </div>
                     
                 </div>
-                <video width="100%" autoPlay muted loop>
+                <video id="video-home" width="100%" autoPlay muted loop>
                     <source src={videoH} />
                     
                 </video>
@@ -44,7 +44,7 @@ export default function Home(){
                         Sempre trabalhei muito bem em equipe, principalmente na liderança de grupos, lido muito bem com resolução de problemas.</p>
                     </div>
                     <hr/>
-                    <div>
+                    <div id="sobre-este-projeto">
                         <h2>Sobre este projeto</h2>
                         <p>Este projeto consiste em apresentar minhas habilidades de desenvolvimento através da prática, possuindo funcionalidades como cadastrar usuário e efetuar login. Há também alguns de meus projetos que realizei ao longo de minha vida como desenvolvedor.
                         Utilizei o framework React para realizar este projeto, nele tive aproximadamente 40 horas investidas.
@@ -82,7 +82,7 @@ export default function Home(){
                             </a>
                         </div>
                         
-                        <div className="imgProjetos">
+                        <div className="imgProjetos mais-proj">
                             <h3>Mais projetos</h3>
                             <Link to="/projetos"><img id="gerador" src={imgCompilado} /></Link>
                             <Link to="/projetos"> <p>Acesse aqui mais projetos <AiOutlineArrowRight/></p>  </Link>

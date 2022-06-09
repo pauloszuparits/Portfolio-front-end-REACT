@@ -91,3 +91,37 @@
     font-weight: 300;
     
 }
+
+@media screen and (max-width: 900px){
+    .sobre-mim-cabeca{
+        font-size: 2em;
+    }
+    .sobre-mim-corpo{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        font-size: 2em;
+    }
+
+    .sobre-mim-esquerda{
+        width: 90%;
+    }
+
+    .sobre-mim-esquerda img{
+        width: 80%;
+        
+        
+    }
+
+    .sobre-mim-direita{
+        width: 90%;
+    }
+
+    .sobre-mim-corpo ul{
+        list-style: none;
+    }
+
+    
+}
