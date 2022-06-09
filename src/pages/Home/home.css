@@ -152,8 +152,18 @@ html {
     margin-right: 20px;
 }
 
+.texto-home-2 h2{
+    margin-bottom: 25px;
+}
+
 .mais-projetos{
     align-items: center;
     justify-content: center;
     padding-top: 20px;
+}
+
+
+
+.imagens-projetos div:hover{
+    transform: scale(1.07);
 }

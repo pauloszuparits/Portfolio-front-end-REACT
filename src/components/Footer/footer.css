@@ -14,4 +14,9 @@
 }
 .footer svg{
     margin: 10px;
+    transition: all 0.2s;
+}
+
+.footer svg:hover{
+    transform: scale(1.3);
 }

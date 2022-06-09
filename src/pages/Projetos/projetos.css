@@ -54,8 +54,11 @@
 .imagens-projetos{
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
 }
+
+
+
 
 .imgProjetos img{
     width: 190px;
@@ -66,7 +69,10 @@
     border: solid 2px #092e6d;
     border-radius: 10px;
     padding: 10px;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     transition: ease-in 0.2s;
 }
 
@@ -105,60 +111,17 @@
     margin-top: 15px;
 }
 
-
-@media screen and (max-width: 560px) {
-    #logo-principal{
-        display: none;
-    }
-
-    .botoes-cabecalho{
-        display: none;
-    }
-
-    .hotdog{
-        display: block;
-    }
-
-    .projetos-react h2{
-        margin: auto;
-        margin-bottom: 20px;
-    }
-    .imagens-projetos{
-        display: block;
-        width: 300px;
-        text-align: center;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    .imgProjetos{
-        margin-bottom: 20px;
-        
-    }
-
-    .titulo-projetos2{
-        justify-content: center;
-        font-size: 1.6em;
-        height: 60px;
-    }
-
-    .imgProjetos:first-child{
-        margin-left: 0px;
-    }
-    
-    .imgProjetos:last-child{
-        margin-right: 0px;
-    }
-
-    .chatbot{
-        margin-bottom: 200px;
-    }
+.imagens-projetos div{
+    width: 23%;
 }
 
 @media screen and  (max-width: 1000px){
     .projetos-react h2{
         margin: auto;
         margin-bottom: 20px;
+    }
+    .imagens-projetos div{
+        width: 40%;
     }
     .titulo-projetos2{
         justify-content: center;
@@ -185,3 +148,56 @@
     }
     
 }
+
+@media screen and (max-width: 560px) {
+    #logo-principal{
+        display: none;
+    }
+
+    .imagens-projetos div{
+        width: 90%;
+    }
+
+    .botoes-cabecalho{
+        display: none;
+    }
+
+    .hotdog{
+        display: block;
+    }
+
+    .projetos-react h2{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .imagens-projetos{
+        display: block;
+        width: 300px;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .imgProjetos{
+        margin-bottom: 20px;        
+    }
+
+    .titulo-projetos2{
+        justify-content: center;
+        font-size: 1.6em;
+        height: 60px;
+    }
+
+    .imgProjetos:first-child{
+        margin-left: 0px;
+    }
+    
+    .imgProjetos:last-child{
+        margin-right: 0px;
+    }
+
+    .chatbot{
+        margin-bottom: 200px;
+    }
+}
+
