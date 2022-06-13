@@ -1,10 +1,15 @@
 import Header from "../../components/Header"
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { AuthContext } from "../../contexts/Auth";
 import { Link } from "react-router-dom";
 import './login.css'
 
 export default function Login(){
+    useEffect(()=>{ 
+        window.scrollTo(0, 0);
+        
+      }, []);
+      
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
     const {logar, loading, singed} = useContext(AuthContext);

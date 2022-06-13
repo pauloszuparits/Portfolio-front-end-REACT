@@ -9,9 +9,15 @@ import imgBlackJack from '../../assets/siteSaudavel.png';
 import imgCraps from '../../assets/craps.png'
 import imgChat from '../../assets/chat-bot.png'
 import { Link } from "react-router-dom"
-
+import { useEffect } from "react";
 import {AiOutlineArrowRight} from 'react-icons/ai'
 export default function Projetos(){
+
+    useEffect(()=>{ 
+        window.scrollTo(0, 0);
+        
+      }, []);
+      
     return(
         <div>
             <Header/>

@@ -2,8 +2,14 @@ import Header from "../../components/Header";
 import './jogovelha.css';
 import img1 from '../../assets/jogo-da-velha.png';
 import img2 from '../../assets/jogo-da-velha-1.png';
-
+import { useEffect } from "react";
 export default function JogoVelha(){
+
+    useEffect(()=>{ 
+        window.scrollTo(0, 0);
+        
+      }, []);
+
     return(
         <div>
             <Header/>

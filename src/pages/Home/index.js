@@ -1,7 +1,7 @@
 import Header from "../../components/Header"
 import videoH from '../../assets/video-home-2.mp4'
 import './home.css'
-import { useRef } from "react"
+import { useRef, useEffect } from "react"
 import {AiOutlineArrowDown} from 'react-icons/ai';
 import {AiOutlineArrowRight} from 'react-icons/ai';
 import { Link } from "react-router-dom";
@@ -16,7 +16,10 @@ export default function Home(){
   
     const ref = useRef(null);
     const executeScroll = () => ref.current.scrollIntoView();
-
+    useEffect(()=>{ 
+        window.scrollTo(0, 0);
+        
+      }, []);
     return(
         <div >
             <Header/>

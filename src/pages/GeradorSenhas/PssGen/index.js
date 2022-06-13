@@ -119,7 +119,7 @@ export default function PssGen(){
                 setCarac(4);
             }
         }
-        
+        window.scrollTo(0, 0);
       }, [carac])
 
     function forca(){ //função para verificar a força da senha, retorna um numero que sera usado como comparação na renderização

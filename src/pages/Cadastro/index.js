@@ -4,8 +4,13 @@ import './cadastro.css';
 import { AuthContext } from "../../contexts/Auth";
 import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function Cadastro(){
+    useEffect(()=>{ 
+        window.scrollTo(0, 0);
+        
+      }, []);
     const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
     const [empresa, setEmpresa] = useState('');

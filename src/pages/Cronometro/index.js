@@ -1,8 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import './cronometro.css'
 import Header from "../../components/Header";
 
 export default function Cronometro(){
+    useEffect(()=>{ 
+        window.scrollTo(0, 0);
+        
+      }, []);
     var[crono, setCrono] = useState(0); //numero que vai aparecer 
     const[txt1, setTxt1] = useState('Começar'); //botao para começar e pausar
     const[txt2, setTxt2] = useState('Zerar'); //botao para zerar

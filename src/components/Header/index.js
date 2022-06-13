@@ -22,7 +22,8 @@ export default function Header(){
                     <Link to="/sobre">Sobre Mim</Link>
                 </div>
 
-                {sideBar ?
+                {sideBar && singed ?
+               
                     <div className="Menu-hot-dog">
                         <button  onClick={handleChange}>
                             <Link to="/">Home</Link>
@@ -33,8 +34,39 @@ export default function Header(){
                         <button onClick={handleChange}>
                             <Link to="/sobre">Sobre Mim</Link>
                         </button>
+                        <button onClick={() => {deslogar(); handleChange();}} >
+                            Deslogar
+                        </button>
+                        <button>
+                            <Link to="/dashboard">Meu Perfil</Link>
+                        </button>
                         <button onClick={handleChange}>Sair menu</button>
                     </div>
+                                   
+                    : !singed && sideBar?
+
+                    <div className="Menu-hot-dog">
+                        <button  onClick={handleChange}>
+                            <Link to="/">Home</Link>
+                        </button>
+                        <button  onClick={handleChange}>
+                            <Link to="/projetos">Meus Projetos</Link>
+                        </button>
+                        <button onClick={handleChange}>
+                            <Link to="/sobre">Sobre Mim</Link>
+                        </button>
+                        
+                        <button onClick={handleChange}>
+                            <Link to="/cadastro">Cadastre-se</Link>
+                        </button>
+                        <button onClick={handleChange}>
+                            <Link to="/login">Login</Link>
+                        </button>
+
+                        <button onClick={handleChange}>Sair menu</button>
+                    </div>
+                    
+
                     :
                     <div className="hotdog">
                         <button onClick={handleChange}>
@@ -45,7 +77,7 @@ export default function Header(){
                 
                 
                 {singed ?
-                    <div className="user-profile-head">
+                    <div className="user-profile-head" id="perfil-foto">
                         
                         <div>
                             <button onClick={deslogar} className="deslogar">Deslogar</button>

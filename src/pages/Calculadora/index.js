@@ -1,10 +1,13 @@
 import "./calculadora.css"
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import Header from "../../components/Header";
 
 
 export default function Calculadora(){
-
+    useEffect(()=>{ 
+        window.scrollTo(0, 0);
+        
+      }, []);
     const [input, setInput] = useState([]);
     
     //seta a entrada

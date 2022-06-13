@@ -1,6 +1,11 @@
 import Header from "../../components/Header"
 import img1 from '../../assets/craps2.png';
+import { useEffect } from "react";
 export default function Craps(){
+    useEffect(()=>{ 
+        window.scrollTo(0, 0);
+        
+      }, []);
     return(
         <div>
             <Header/>

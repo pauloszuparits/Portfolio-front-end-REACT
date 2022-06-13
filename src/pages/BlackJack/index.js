@@ -1,7 +1,11 @@
 import Header from "../../components/Header";
-
+import { useEffect } from "react";
 import {AiOutlineGithub} from 'react-icons/ai';
 export default function BlackJack(){
+    useEffect(()=>{ 
+        window.scrollTo(0, 0);
+        
+      }, []);
     return(
         <div>
             <Header/>
