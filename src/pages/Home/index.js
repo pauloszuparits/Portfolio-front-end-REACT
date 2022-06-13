@@ -46,7 +46,7 @@ export default function Home(){
                     <hr/>
                     <div id="sobre-este-projeto">
                         <h2>Sobre este projeto</h2>
-                        <p>Este projeto consiste em apresentar minhas habilidades de desenvolvimento através da prática, apresentando funcionalidades como cadastrar usuário e efetuar login. Há também alguns dos projetos que realizei ao longo da minha vida como desenvolvedor.
+                        <p id="sobre-p">Este projeto consiste em apresentar minhas habilidades de desenvolvimento através da prática, apresentando funcionalidades como cadastrar usuário e efetuar login. Há também alguns dos projetos que realizei ao longo da minha vida como desenvolvedor.
                         Utilizei o framework React para realizar este projeto, nele tive aproximadamente 40 horas investidas.
                         </p>
                     </div>
@@ -55,7 +55,7 @@ export default function Home(){
                 <div className="texto-home-2">
                     <h2 id="home-alguns">Alguns dos meus projetos</h2>
                     <div className="imagens-projetos">
-                        <div className="imgProjetos">
+                        <div className="imgProjetos" id="proj-home">
                         <h3>Calculadora</h3>
                             <Link to="/projetos/calculadora"><img id="calculadora" src={imgCalculadora} /></Link>
                             <Link to="/projetos/calculadora"> <p>Saiba mais sobre esse projeto <AiOutlineArrowRight/></p>  </Link>
@@ -64,7 +64,7 @@ export default function Home(){
                             </a>
                         </div>
 
-                        <div className="imgProjetos chatbot">
+                        <div className="imgProjetos chatbot" id="chatbot-home">
                             <h3>ChatBot (Java) </h3>
                             <Link to="/projetos/chatbot"><img id="tarefas" src={imgChat} /></Link>
                             <Link to="/projetos/chatbot"> <p>Saiba mais sobre esse projeto <AiOutlineArrowRight/></p>  </Link>
@@ -73,7 +73,7 @@ export default function Home(){
                             </a>
                         </div>
 
-                        <div className="imgProjetos">
+                        <div className="imgProjetos" id="gerador-home">
                             <h3>Gerador de Senhas</h3>
                             <Link to="/projetos/geradorsenhas"><img id="gerador" src={imgGerador} /></Link>
                             <Link to="/projetos/geradorsenhas"> <p>Saiba mais sobre esse projeto <AiOutlineArrowRight/></p>  </Link>
@@ -82,7 +82,7 @@ export default function Home(){
                             </a>
                         </div>
                         
-                        <div className="imgProjetos mais-proj">
+                        <div className="imgProjetos mais-proj" id="mais-proj-home">
                             <h3>Mais projetos</h3>
                             <Link to="/projetos"><img id="gerador" src={imgCompilado} /></Link>
                             <Link to="/projetos"> <p>Acesse aqui mais projetos <AiOutlineArrowRight/></p>  </Link>

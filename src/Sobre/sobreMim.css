@@ -94,7 +94,7 @@
 
 @media screen and (max-width: 900px){
     .sobre-mim-cabeca{
-        font-size: 2em;
+        font-size: 1em;
     }
     .sobre-mim-corpo{
         flex-direction: column;
@@ -102,7 +102,8 @@
         align-items: center;
         text-align: center;
         width: 90%;
-        font-size: 2em;
+        font-size: 1em;
+        margin: auto;
     }
 
     .sobre-mim-esquerda{
@@ -110,7 +111,7 @@
     }
 
     .sobre-mim-esquerda img{
-        width: 80%;
+        width: 100%;
         
         
     }

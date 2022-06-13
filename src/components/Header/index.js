@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom"
 import './header.css'
 import {AiOutlineMenu} from 'react-icons/ai'
-import { useContext, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { AuthContext } from "../../contexts/Auth"
 import avatar from '../../assets/avatar.png'
 export default function Header(){
     const [sideBar, setSideBar] = useState(false);
     const {singed, user, deslogar} = useContext(AuthContext);
 
-
+    useEffect(()=>{},[sideBar])
     function handleChange(){
         setSideBar(!sideBar);
     }
@@ -21,11 +21,28 @@ export default function Header(){
                     <Link to="/projetos">Meus Projetos</Link>
                     <Link to="/sobre">Sobre Mim</Link>
                 </div>
-                <div className="hotdog">
-                    <button onClick={handleChange}>
-                        <AiOutlineMenu size={25} color={'#fff'}/>
-                    </button>
-                </div>
+
+                {sideBar ?
+                    <div className="Menu-hot-dog">
+                        <button  onClick={handleChange}>
+                            <Link to="/">Home</Link>
+                        </button>
+                        <button  onClick={handleChange}>
+                            <Link to="/projetos">Meus Projetos</Link>
+                        </button>
+                        <button onClick={handleChange}>
+                            <Link to="/sobre">Sobre Mim</Link>
+                        </button>
+                        <button onClick={handleChange}>Sair menu</button>
+                    </div>
+                    :
+                    <div className="hotdog">
+                        <button onClick={handleChange}>
+                            <AiOutlineMenu size={25} color={'#fff'}/>
+                        </button>
+                    </div>
+                }
+                
                 
                 {singed ?
                     <div className="user-profile-head">
@@ -46,6 +63,8 @@ export default function Header(){
                         <Link to="/login">Login</Link>
                     </div>
                 }
+
+                
             </div>
         </div>
     )

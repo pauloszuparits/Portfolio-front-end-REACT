@@ -69,7 +69,9 @@
     font-weight: 500;
 }
 
-
+.Menu-hot-dog{
+    display: none;
+}
 
 .imgProjetos{
     border: solid 2px #092e6d;
@@ -170,7 +172,49 @@
 
     .hotdog{
         display: block;
+        transition: all 0.5s;
     }
+
+    .Menu-hot-dog{
+        display: block;
+        margin: 0;
+        background-color: #0B3C8F;
+        width: 50vw;
+        height: 100vh;
+        z-index: 99;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        border-radius: 10px;
+        padding: 10px;
+        padding-top: 200px;
+        
+    }
+
+    .Menu-hot-dog a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .Menu-hot-dog button{
+        /* margin-top: 15px;
+        background-color: transparent;
+        color: white;
+        font-size: 1.8em;
+        border: solid 1px white;
+        padding: 4px;
+        border-radius: 10px; */
+        background-color: #06214F;
+        padding: 4px 8px;
+        border-radius: 7px;
+        font-size: 1.5em;
+        color: white;
+        transition: ease-in 0.2s;
+        margin-right: 8px;
+        margin-bottom: 10px;
+    }
+    
 
     .projetos-react h2{
         margin: auto;
