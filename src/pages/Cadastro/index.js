@@ -16,8 +16,15 @@ export default function Cadastro(){
 
     function handleSubmit(e){
         e.preventDefault();
+        // if(senha.length <= 6){
+        //     toast.error('A senha deve possuir mais de 6 caracteres');
+        //     setLoading(false);
+        // }
         if(nome !== '' && email !== '' && senha !== '' && senhaCon !== ''){
             if(senha === senhaCon){
+                if(senha.length <= 6){
+                    toast.error('A senha deve possuir mais de 6 caracteres');
+                }else{
                 cadastro(email, senha, nome, empresa);
     
                 setNome('');
@@ -25,6 +32,7 @@ export default function Cadastro(){
                 setEmpresa('');
                 setSenha('');
                 setSenhaCon('');
+                }
             }else{
                 toast.error('Senhas não conferem');
                 setSenha('');

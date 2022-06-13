@@ -5,7 +5,7 @@ import imgCronometro from '../../assets/cronometro.png';
 import imgGerador from '../../assets/gerados.png';
 import imgTarefas from '../../assets/tarefas.png';
 import imgJogoDaVelha from '../../assets/jogo-da-velha.png'
-import imgBlackJack from '../../assets/blackjack3.png';
+import imgBlackJack from '../../assets/siteSaudavel.png';
 import imgCraps from '../../assets/craps.png'
 import imgChat from '../../assets/chat-bot.png'
 import { Link } from "react-router-dom"
@@ -85,10 +85,10 @@ export default function Projetos(){
                         </div>
 
                         <div className="imgProjetos">
-                            <h3>BlackJack (Java) </h3>
-                            <Link to="/projetos/blackjack"><img id="tarefas" src={imgBlackJack} /></Link>
-                            <Link to="/projetos/blackjack"> <p>Saiba mais sobre esse projeto <AiOutlineArrowRight/></p>  </Link>
-                            <a href="https://github.com/pauloszuparits/Projetos_Programacao/tree/main/BlackJack" target="_blank" rel="noopener noreferrer">
+                            <h3>Site Saudavel(NodeJS+EJS) </h3>
+                            <Link to="/projetos/siteSaudavel"><img id="tarefas" src={imgBlackJack} /></Link>
+                            <Link to="/projetos/siteSaudavel"> <p>Saiba mais sobre esse projeto <AiOutlineArrowRight/></p>  </Link>
+                            <a href="https://github.com/pauloszuparits/Projeto_Node-Mongo" target="_blank" rel="noopener noreferrer">
                             <p>Acessar este projeto no GitHub <AiOutlineArrowRight/></p>
                             </a>
                         </div>

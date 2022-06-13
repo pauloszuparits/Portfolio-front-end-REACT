@@ -2,7 +2,15 @@ import Header from "../components/Header"
 import './sobreMim.css';
 import idiomas from '../assets/idiomas.png';
 import habilidades from '../assets/habilidades.png';
+import { useEffect, useState } from "react";
 export default function Sobre(){
+    
+    
+    useEffect(()=>{ 
+        window.scrollTo(0, 0);
+        
+      }, [])
+
     return(
         <div>
             <Header/>

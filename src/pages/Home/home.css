@@ -162,17 +162,34 @@ html {
     padding-top: 20px;
 }
 
+.mais-proj h3{
+    margin-bottom: 15px;
+}
+
 .imagens-projetos div:hover{
     transform: scale(1.07);
 }
 
-.mais-proj{
-    height: 271px;
+#home-alguns{
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
-.mais-proj h3{
-    margin-top: -61px;
-    margin-bottom: 5px;
+
+.texto-home-1 a{
+    text-decoration: none;
+    color: #1f71ff;
+    
 }
+
+#sobre-mim-link{
+    transition: all 0.2s;
+}
+
+#sobre-mim-link:hover{
+    
+    color: #154aa5;
+}
+
 
 @media screen and (max-width: 740px){
     #video-home{

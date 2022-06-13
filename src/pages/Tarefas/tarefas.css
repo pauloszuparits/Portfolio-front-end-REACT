@@ -18,6 +18,10 @@
     margin: 8px;
 }
 
+.titulo-tarefas-conteiner{
+    margin-top: 30px;
+}
+
 #slct-cor{
     width: 300px;
 }
@@ -149,6 +153,14 @@
 .principal{
     display: flex;
     
+}
+
+.legendas h2{
+    margin-bottom: 10px;
+}
+
+.legendas h3{
+    margin-bottom: 20px;
 }
 
 

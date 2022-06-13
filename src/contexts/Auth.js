@@ -56,6 +56,7 @@ function AuthProvider({children}){
 
     async function cadastro(email, senha, nome, empresa){
         setLoading(true);
+        
         await firebase.auth().createUserWithEmailAndPassword(email, senha)
         .then(async(value)=>{
             let uid = value.user.uid;

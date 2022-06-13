@@ -40,20 +40,20 @@ export default function Home(){
                 <div className="texto-home-1" ref={ref}>
                     <div>
                         <h2>Sobre mim</h2>
-                        <p>Eu sou apaixonado por tecnologia desde pequeno, hoje com meus 20 anos, estou cursando sistemas de informação e me encontro no quinto período do curso.
-                        Sempre trabalhei muito bem em equipe, principalmente na liderança de grupos, lido muito bem com resolução de problemas.</p>
+                        <p>Sou apaixonado por tecnologia e hoje com meus 21 anos estou em busca de novos desafios. Após passar mais de um ano em um multinacional absorvendo todos aprendizados possíveis, agora estou em busca de conhecimentos na área que sou apaixonado, desenvolvimento/programação.</p>
+                        <Link to="/sobre"> <p id="sobre-mim-link">Saiba mais sobre mim <AiOutlineArrowRight/></p>  </Link>
                     </div>
                     <hr/>
                     <div id="sobre-este-projeto">
                         <h2>Sobre este projeto</h2>
-                        <p>Este projeto consiste em apresentar minhas habilidades de desenvolvimento através da prática, possuindo funcionalidades como cadastrar usuário e efetuar login. Há também alguns de meus projetos que realizei ao longo de minha vida como desenvolvedor.
+                        <p>Este projeto consiste em apresentar minhas habilidades de desenvolvimento através da prática, apresentando funcionalidades como cadastrar usuário e efetuar login. Há também alguns dos projetos que realizei ao longo da minha vida como desenvolvedor.
                         Utilizei o framework React para realizar este projeto, nele tive aproximadamente 40 horas investidas.
                         </p>
                     </div>
                 </div>
 
                 <div className="texto-home-2">
-                    <h2>Alguns dos meus projetos</h2>
+                    <h2 id="home-alguns">Alguns dos meus projetos</h2>
                     <div className="imagens-projetos">
                         <div className="imgProjetos">
                         <h3>Calculadora</h3>
@@ -86,7 +86,9 @@ export default function Home(){
                             <h3>Mais projetos</h3>
                             <Link to="/projetos"><img id="gerador" src={imgCompilado} /></Link>
                             <Link to="/projetos"> <p>Acesse aqui mais projetos <AiOutlineArrowRight/></p>  </Link>
-                            
+                            <a href="https://github.com/pauloszuparits/" target="_blank" rel="noopener noreferrer">
+                                <p>Acessar meu Github <AiOutlineArrowRight/></p>
+                            </a>
                         </div>
                         
                         

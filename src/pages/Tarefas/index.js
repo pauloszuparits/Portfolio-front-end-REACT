@@ -139,52 +139,52 @@ export default function Tarefas(){
                                 </div>
                                 }
                                 {laranjaB ?
-                                <div>
-                                    <p>🟧 - Laranja {laranjaLeg}</p>
+                                <div className="legenda">
+                                    <p className="titulo-legenda">🟧 - Laranja {laranjaLeg}</p>
                                     <button onClick={()=>{setLaranjaB(false)}} className="botao-tarefa botao-legenda">Editar</button>
                                 </div>
                                 :
-                                <div>
-                                    <p>🟧 - Laranja</p>
+                                <div className="legenda">
+                                    <p className="titulo-legenda">🟧 - Laranja</p>
                                     <input type="text" value={laranjaLeg}
                                     onChange={(e)=>{setLaranjaLeg(e.target.value)}}/>
                                     <button onClick={()=>{setLaranjaB(true)}} className="botao-tarefa botao-legenda">Adicionar</button>
                                 </div>
                                 }
                                 {vermelhoB ?
-                                <div>
-                                    <p>🟥 - Vermelho {vermelhoLeg}</p>
+                                <div className="legenda">
+                                    <p className="titulo-legenda">🟥 - Vermelho {vermelhoLeg}</p>
                                     <button onClick={()=>{setVermelhoB(false)}} className="botao-tarefa botao-legenda">Editar</button>
                                 </div>
                                 :
-                                <div>
-                                    <p>🟥 - Vermelho</p>
+                                <div className="legenda">
+                                    <p className="titulo-legenda">🟥 - Vermelho</p>
                                     <input type="text" value={vermelhoLeg}
                                     onChange={(e)=>{setVermelhoLeg(e.target.value)}}/>
                                     <button onClick={()=>{setVermelhoB(true)}} className="botao-tarefa botao-legenda">Adicionar</button>
                                 </div>
                                 }
                                 {verdeB ?
-                                <div>
-                                    <p>🟩 - Verde {verdeLeg}</p>
+                                <div className="legenda">
+                                    <p className="titulo-legenda">🟩 - Verde {verdeLeg}</p>
                                     <button onClick={()=>{setVerdeB(false)}} className="botao-tarefa botao-legenda">Editar</button>
                                 </div>
                                 :
-                                <div>
-                                    <p>🟩 - Verde</p>
+                                <div className="legenda">
+                                    <p className="titulo-legenda">🟩 - Verde</p>
                                     <input type="text" value={verdeLeg}
                                     onChange={(e)=>{setVerdeLeg(e.target.value)}}/>
                                     <button onClick={()=>{setVerdeB(true)}} className="botao-tarefa botao-legenda">Adicionar</button>
                                 </div>
                                 }
                                 {azulB ?
-                                <div>
-                                    <p>🟦 - Azul {azulLeg}</p>
+                                <div className="legenda">
+                                    <p className="titulo-legenda">🟦 - Azul {azulLeg}</p>
                                     <button onClick={()=>{setAzulB(false)}} className="botao-tarefa botao-legenda">Editar</button>
                                 </div>
                                 :
-                                <div>
-                                    <p>🟦 - Azul</p>
+                                <div className="legenda">
+                                    <p className="titulo-legenda">🟦 - Azul</p>
                                     <input type="text" value={azulLeg}
                                     onChange={(e)=>{setAzulLeg(e.target.value)}}/>
                                     <button onClick={()=>{setAzulB(true)}} className="botao-tarefa botao-legenda">Adicionar</button>
@@ -212,7 +212,7 @@ export default function Tarefas(){
                             
                             
                                 <Draggable defaultPosition={tarefa.posicao} key={tarefa.id}
-                                bounds="body" 
+                                 
                                 onDrag={(e, ui)=>{
                                     setPosicao({x: posicao.x + ui.deltaX,
                                                 y: posicao.y + ui.deltaY})

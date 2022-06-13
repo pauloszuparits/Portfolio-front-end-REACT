@@ -30,7 +30,7 @@ export default function Routes(){
             <Route exact path="/projetos/geradorsenhas/salvas" component={PssSaved}/>
             <Route exact path="/projetos/tarefas" component={Tarefas}/>
             <Route exact path="/projetos/jogodavelha" component={JogoVelha}/>
-            <Route exact path="/projetos/blackjack" component={BlackJack}/>
+            <Route exact path="/projetos/siteSaudavel" component={BlackJack}/>
             <Route exact path="/projetos/craps" component={Craps}/>
             <Route exact path="/projetos/chatbot" component={ChatBot}/>
             <Route exact path="/cadastro" component={Cadastro}/>
