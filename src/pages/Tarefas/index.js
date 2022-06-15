@@ -1,4 +1,4 @@
-import { useState } from "react/cjs/react.development";
+import { useState } from 'react';
 import './tarefas.css'
 import Draggable from "react-draggable";
 import { useEffect } from "react";
