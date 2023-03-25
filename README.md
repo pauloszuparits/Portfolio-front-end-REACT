@@ -19,7 +19,7 @@ Uma calculadora simples feita com javascript. Suas funcionalidades são básicas
 #### Cronometro
 Um cronometro simples feito também em javascript. Suas funcionalidaes são **iniciar, pausar e zerar contagem**
 
-![Cronometro ReactJS](https://github.com/pauloszuparits/Imagens/blob/083a89b67bf4f164a3de06afcdae5c6543b4b9c3/imgPortfolioFrontEnd/CronometroReactJS.png)  
+![Cronometro ReactJS](https://github.com/pauloszuparits/Imagens/blob/main/imgPortfolioFrontEnd/CronometroReactJS.png)  
 
 #### Gerador de senhas
 Este gerador de senhas, feito em javascript, é bem personalizado, onde o usuário pode escolher:  
