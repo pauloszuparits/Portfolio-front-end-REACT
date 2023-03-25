@@ -14,12 +14,12 @@ Alguns dos projetos realizados em javascript estão presentes no site para que o
 
 Uma calculadora simples feita com javascript. Suas funcionalidades são básicas de uma calculadora como **soma, subtração, multiplicação, divisão e cancelar.**
 
-![Calculadora ReactJS]()
+![Calculadora ReactJS](https://github.com/pauloszuparits/Imagens/blob/083a89b67bf4f164a3de06afcdae5c6543b4b9c3/imgPortfolioFrontEnd/CalculadoraReactJS.png)
 
 #### Cronometro
 Um cronometro simples feito também em javascript. Suas funcionalidaes são **iniciar, pausar e zerar contagem**
 
-![Cronometro ReactJS]()  
+![Cronometro ReactJS](https://github.com/pauloszuparits/Imagens/blob/083a89b67bf4f164a3de06afcdae5c6543b4b9c3/imgPortfolioFrontEnd/CronometroReactJS.png)  
 
 #### Gerador de senhas
 Este gerador de senhas, feito em javascript, é bem personalizado, onde o usuário pode escolher:  
@@ -29,11 +29,11 @@ Este gerador de senhas, feito em javascript, é bem personalizado, onde o usuár
 *Maiusculas e minusculas  
 *Texto personalizado, onde o usuário pode, por exemplo, colocar seu nome na senha para facilitar a memorização.  
 
-![Gerador de senhas 'home' ReactJS]()  
+![Gerador de senhas 'home' ReactJS](https://github.com/pauloszuparits/Imagens/blob/083a89b67bf4f164a3de06afcdae5c6543b4b9c3/imgPortfolioFrontEnd/GeradorDeSenhasHOMEReactJS.png)  
 
 Além destas funções, o usuário, pode salvar a senha gerada. Ela será salva no navegador do usuário. Ou caso queira, o usuário pode clicar no botão 'copiar senha' e ela será copiada para a área de transferencia do usuário.
 
-![Gerador de senhas 'gerada' ReactJS]()  
+![Gerador de senhas 'gerada' ReactJS](https://github.com/pauloszuparits/Imagens/blob/083a89b67bf4f164a3de06afcdae5c6543b4b9c3/imgPortfolioFrontEnd/GeradorDeSenhasGERADOReactJS.png)  
 
 #### Organizador de tarefas  
 
@@ -41,6 +41,6 @@ Este organizador de tarefas, feito em javascript, usa o estilo 'kanban' e tem di
 O usuário pode escolher um título para a tarefa, uma descrição, uma cor e uma legenda para tal cor.  
 Após clicar em adicionar, esta tarefa irá para a área de 'planejado' e ela poderá ser movida para a área de 'em progresso' ou para a área de 'feito'.
 
-![Organizador de tarefas ReactJS]()  
+![Organizador de tarefas ReactJS](https://github.com/pauloszuparits/Imagens/blob/083a89b67bf4f164a3de06afcdae5c6543b4b9c3/imgPortfolioFrontEnd/OrganizadorTarefasReactJS.png)  
 
 As tarefas também podem ser salvas no navegador do usuário clicando em 'salvar tarefas', tanto as legendas, como as tarefas e suas posições serão salvas.
