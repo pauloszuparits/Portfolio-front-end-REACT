@@ -23,11 +23,11 @@ Um cronometro simples feito também em javascript. Suas funcionalidaes são **in
 
 #### Gerador de senhas
 Este gerador de senhas, feito em javascript, é bem personalizado, onde o usuário pode escolher:  
-*Quantidade de caracteres  
-*Caracteres especiais  
-*Números  
-*Maiusculas e minusculas  
-*Texto personalizado, onde o usuário pode, por exemplo, colocar seu nome na senha para facilitar a memorização.  
+- Quantidade de caracteres  
+- Caracteres especiais  
+- Números  
+- Maiusculas e minusculas  
+- Texto personalizado, onde o usuário pode, por exemplo, colocar seu nome na senha para facilitar a memorização.  
 
 ![Gerador de senhas 'home' ReactJS](https://github.com/pauloszuparits/Imagens/blob/083a89b67bf4f164a3de06afcdae5c6543b4b9c3/imgPortfolioFrontEnd/GeradorDeSenhasHOMEReactJS.png)  
 
